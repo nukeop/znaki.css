@@ -1,0 +1,25 @@
+@import './znaki-kolory.scss';
+@import './mixin.scss';
+
+.miejscowosc {
+  position: relative;
+  background: $green;
+  color: $white;
+  padding: 0.75em 1em;
+  margin-right: 0.5em;
+
+  &.big {
+    font-size: 32px;
+  }
+
+  &:before {
+    position: absolute;
+    top: 0.05em;
+    bottom: 0.05em;
+    left: 0.05em;
+    right: 0.05em;
+    border: 0.15em solid white;
+    content: "";
+    @include borderRadius;
+  }
+}

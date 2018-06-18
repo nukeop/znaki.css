@@ -1,13 +1,20 @@
+@import './font.css';
 @import './znaki-kolory.scss';
+@import './mixin.scss';
 
-@mixin borderRadius {
-  border-radius: 12px;
+@import './E.scss';
+
+.znak {
+  display: flex;
+  flex-flow: column;
+  font-family: 'Drogowskaz';
+  font-size: 20px;
+  @include borderRadius;
 }
 
 .warning {
-  @include borderRadius;
 }
 
 .info {
-  @include borderRadius;
+  background-color: $blue;
 }

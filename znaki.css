@@ -1,0 +1,16 @@
+@import url(./font.css);
+.miejscowosc {
+  background: #2c5c32; }
+
+.znak {
+  font: 'Drogowskaz';
+  border-radius: 12px; }
+
+.warning {
+  border-radius: 12px; }
+
+.info {
+  border-radius: 12px;
+  background-color: #0f00fb; }
+
+/*# sourceMappingURL=znaki.css.map */
