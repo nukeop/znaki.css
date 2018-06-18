@@ -1,0 +1,13 @@
+@import './znaki-kolory.scss';
+
+@mixin borderRadius {
+  border-radius: 12px;
+}
+
+.warning {
+  @include borderRadius;
+}
+
+.info {
+  @include borderRadius;
+}

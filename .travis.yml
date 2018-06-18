@@ -1,0 +1,12 @@
+language: sass
+before_install:
+  - gem install sass
+script:
+  - ./build.sh
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local-dir: demo
