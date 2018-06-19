@@ -1,16 +1,38 @@
 @import url(./font.css);
 .miejscowosc {
-  background: #2c5c32; }
+  position: relative;
+  background: #2c5c32;
+  color: #ffffff;
+  padding: 0.75em 1em;
+  margin-right: 0.5em; }
+  .miejscowosc.big {
+    font-size: 32px; }
+  .miejscowosc.przekreslony:after {
+    position: absolute;
+    top: 0.2em;
+    bottom: 0.2em;
+    left: 0.2em;
+    right: 0.2em;
+    background: linear-gradient(to top left, transparent 45%, #d40000 47%, #d40000, #d40000 54%, transparent 55%);
+    content: ""; }
+  .miejscowosc:before {
+    position: absolute;
+    top: 0.05em;
+    bottom: 0.05em;
+    left: 0.05em;
+    right: 0.05em;
+    border: 0.15em solid white;
+    content: "";
+    border-radius: 6px; }
 
 .znak {
-  font: 'Drogowskaz';
-  border-radius: 12px; }
-
-.warning {
-  border-radius: 12px; }
+  display: flex;
+  flex-flow: column;
+  font-family: 'Drogowskaz';
+  font-size: 20px;
+  border-radius: 6px; }
 
 .info {
-  border-radius: 12px;
   background-color: #0f00fb; }
 
 /*# sourceMappingURL=znaki.css.map */

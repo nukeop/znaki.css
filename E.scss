@@ -12,6 +12,25 @@
     font-size: 32px;
   }
 
+  &.przekreslony {
+    &:after {
+      position: absolute;
+      top: 0.2em;
+      bottom: 0.2em;
+      left: 0.2em;
+      right: 0.2em;
+      background: linear-gradient(
+        to top left,
+        transparent 45%,
+        $red 47%,
+        $red,
+        $red 54%,
+        transparent 55%
+      );
+      content: "";
+    }
+  }
+
   &:before {
     position: absolute;
     top: 0.05em;
