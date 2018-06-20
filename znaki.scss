@@ -5,11 +5,16 @@
 @import './E.scss';
 
 .znak {
+  position: relative;
   display: flex;
   flex-flow: column;
   font-family: 'Drogowskaz';
   font-size: 20px;
   @include borderRadius;
+
+  &.big {
+    font-size: 32px;
+  }
 }
 
 .warning {
