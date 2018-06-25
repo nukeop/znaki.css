@@ -1,12 +1,9 @@
 @import url(./font.css);
 .miejscowosc {
-  position: relative;
   background: #2c5c32;
   color: #ffffff;
   padding: 0.75em 1em;
   margin-right: 0.5em; }
-  .miejscowosc.big {
-    font-size: 32px; }
   .miejscowosc.przekreslony:after {
     position: absolute;
     top: 0.2em;
@@ -25,12 +22,130 @@
     content: "";
     border-radius: 6px; }
 
+.drogowskaz {
+  background: #ffffff;
+  color: #2e4994;
+  padding: 0.25em 0.5em;
+  margin-right: 1.5em;
+  border: 0.1em solid #2e4994;
+  border-right: none;
+  border-radius: 0px !important; }
+  .drogowskaz:before {
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: -1em;
+    top: -0.1em;
+    border-left: 1em solid #2e4994;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    content: ""; }
+  .drogowskaz:after {
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: -0.6em;
+    top: 0;
+    border-left: 0.6em solid white;
+    border-top: 0.9em solid transparent;
+    border-bottom: 0.9em solid transparent;
+    content: ""; }
+  .drogowskaz:only-child {
+    margin-right: 0; }
+
+.zabytek {
+  background: #ffffff;
+  color: #79603e;
+  padding: 0.25em 0.5em;
+  margin-right: 1.5em;
+  border: 0.1em solid #79603e;
+  border-right: none;
+  border-radius: 0px !important; }
+  .zabytek:before {
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: -1em;
+    top: -0.1em;
+    border-left: 1em solid #79603e;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    content: ""; }
+  .zabytek:after {
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: -0.6em;
+    top: 0;
+    border-left: 0.6em solid white;
+    border-top: 0.9em solid transparent;
+    border-bottom: 0.9em solid transparent;
+    content: ""; }
+  .zabytek:only-child {
+    margin-right: 0; }
+
+.droga {
+  padding: 0 0.5em;
+  margin-right: 0.5em; }
+  .droga:only-child {
+    margin-right: 0; }
+  .droga.krajowa {
+    background: #d40000;
+    color: #ffffff;
+    border: 0.1em solid #ffffff; }
+  .droga.wojewodzka {
+    background: #febe0b;
+    color: #000000;
+    border: 0.1em solid #000000; }
+  .droga.miedzynarodowa {
+    background: #2c5c32;
+    color: #ffffff;
+    border: 0.1em solid #ffffff; }
+
+.tablica {
+  color: #ffffff;
+  min-width: 10em;
+  padding: 0.2em;
+  margin-right: 0.5em; }
+  .tablica:only-child {
+    margin-right: 0; }
+  .tablica.green {
+    background: #2c5c32; }
+  .tablica.blue {
+    background: #2e4994; }
+  .tablica.mieszana {
+    background: #ffffff;
+    border: 0.05em solid #2c5c32; }
+    .tablica.mieszana .row:not(:last-child) {
+      margin-bottom: 0.2em; }
+    .tablica.mieszana .row.green {
+      background: #2c5c32; }
+    .tablica.mieszana .row.blue {
+      background: #2e4994; }
+  .tablica:before {
+    position: absolute;
+    top: 0.05em;
+    bottom: 0.05em;
+    left: 0.05em;
+    right: 0.05em;
+    border: 0.15em solid white;
+    content: "";
+    border-radius: 6px; }
+  .tablica .row {
+    padding: 0.5rem 1rem !important;
+    justify-content: space-between; }
+    .tablica .row.center {
+      justify-content: center; }
+
 .znak {
+  position: relative;
   display: flex;
   flex-flow: column;
   font-family: 'Drogowskaz';
   font-size: 20px;
   border-radius: 6px; }
+  .znak.big {
+    font-size: 32px; }
 
 .info {
   background-color: #0f00fb; }

@@ -2,7 +2,6 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
 }
 
 .demo {
@@ -10,7 +9,6 @@ html, body {
   display: flex;
   flex-flow: column;
   width: 100%;
-  height: 100%;;
   background: #ADD8E6;
 
   .row {

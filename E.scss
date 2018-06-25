@@ -38,12 +38,12 @@
   }
 }
 
-.drogowskaz {
+@mixin drogowskaz($color) {
   background: $white;
-  color: $darkblue;
+  color: $color;
   padding: 0.25em 0.5em;
   margin-right: 1.5em;
-  border: 0.1em solid $darkblue;
+  border: 0.1em solid $color;
   border-right: none;
   
   border-radius: 0px !important;
@@ -55,7 +55,7 @@
     right: -1em;
     top: -0.1em;
 
-    border-left: 1em solid $darkblue;
+    border-left: 1em solid $color;
     border-top: 1em solid transparent;
     border-bottom: 1em solid transparent;
 
@@ -74,5 +74,96 @@
     border-bottom: 0.9em solid transparent;
 
     content: "";
+  }
+
+  &:only-child {
+    margin-right: 0;
+  }
+}
+
+.drogowskaz {
+  @include drogowskaz($darkblue);  
+}
+
+.zabytek {
+  @include drogowskaz($brown);  
+}
+
+.droga {
+  padding: 0 0.5em;
+
+  @include marginRight;
+  
+  &.krajowa {
+    background: $red;
+    color: $white;
+    border: 0.1em solid $white;
+  }
+
+  &.wojewodzka {
+    background: $yellow;
+    color: $black;
+    border: 0.1em solid $black;
+  }
+
+  &.miedzynarodowa {
+    background: $green;
+    color: $white;
+    border: 0.1em solid $white;
+  }
+}
+
+.tablica {
+  color: $white;
+  min-width: 10em;
+  padding: 0.2em;
+
+  @include marginRight;
+  
+  &.green {
+    background: $green;
+  }
+
+  &.blue {
+    background: $darkblue;
+  }
+
+  &.mieszana {
+    background: $white;
+    border: 0.05em solid $green;
+
+    .row {
+      &:not(:last-child) {
+        margin-bottom: 0.2em;
+      }
+      
+      &.green {
+        background: $green;
+      }
+
+      &.blue {
+        background: $darkblue;
+      }
+    }
+  }
+
+  &:before {
+    position: absolute;
+    top: 0.05em;
+    bottom: 0.05em;
+    left: 0.05em;
+    right: 0.05em;
+    border: 0.15em solid white;
+    content: "";
+    @include borderRadius;
+  }
+
+  .row {
+    padding: 0.5rem 1rem !important;
+    justify-content: space-between;
+
+    &.center {
+      justify-content: center;
+    }
   }
 }

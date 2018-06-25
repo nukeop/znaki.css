@@ -1,3 +1,10 @@
 @mixin borderRadius {
   border-radius: 6px;
 }
+
+@mixin marginRight {
+  margin-right: 0.5em;
+  &:only-child {
+    margin-right: 0;
+  }
+}

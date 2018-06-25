@@ -1,4 +1,5 @@
 #!/bin/bash
+rm -rf demo
 sass --scss znaki.scss znaki.css
 sass --scss demo.scss demo.css
 mkdir demo
