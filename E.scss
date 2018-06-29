@@ -168,11 +168,21 @@
     position: relative;
     display: flex;
     flex-flow: row;
-    padding: 0.5em 1em;
+    padding: 0.5em;
     justify-content: space-between;
+    align-items: center;
 
     &.center {
       justify-content: center;
     }
+  }
+
+  .group {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
