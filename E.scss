@@ -39,6 +39,10 @@
 }
 
 @mixin drogowskaz($color) {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
   background: $white;
   color: $color;
   padding: 0.25em 0.5em;
@@ -87,6 +91,15 @@
 
 .zabytek {
   @include drogowskaz($brown);  
+}
+
+.drogowskaz-miejscowosc {
+  @include drogowskaz($white);
+  background: $green;
+
+  &:after{
+    border-left: 0.6em solid $green;
+  }
 }
 
 .droga {
