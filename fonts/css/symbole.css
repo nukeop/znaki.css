@@ -9,11 +9,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
 [class*='icon-'] {
   display: inline-flex;
   align-items: center;
   font-size: 24px;
 }
+
+[class*='icon-'].small {
+  font-size: 18px;
+}
+
 [class*='icon-']:before{
 	display: inline-block;
   font-family: 'symbole';
@@ -23,4 +29,5 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
+
 .icon-strzalka:before{content:'\0041';}
