@@ -11,10 +11,11 @@ html, body {
   width: 100%;
   background: #ADD8E6;
 
-  .row {
+  .demo-row {
     position: relative;
     display: flex;
     flex-flow: row;
     padding: 1rem;
+    align-items: flex-start;
   }
 }

@@ -147,6 +147,12 @@
     }
   }
 
+  &.kierunkowa {
+    .row {
+      padding: 0.125em 0.5em;
+    }
+  }
+
   &:before {
     position: absolute;
     top: 0.05em;
@@ -159,7 +165,10 @@
   }
 
   .row {
-    padding: 0.5rem 1rem !important;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    padding: 0.5em 1em;
     justify-content: space-between;
 
     &.center {
