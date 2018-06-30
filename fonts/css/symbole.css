@@ -31,3 +31,13 @@
 }
 
 .icon-strzalka:before{content:'\0041';}
+.icon-pociag:before{content:'\0042';}
+.icon-samolot:before{content:'\0043';}
+.icon-autobus:before{content:'\0044';}
+.icon-rower:before{content:'\0045';}
+.icon-prom:before{content:'\0046';}
+.icon-cmentarz:before{content:'\0047';}
+.icon-drzewo:before{content:'\0048';}
+.icon-zakret:before{content:'\0049';}
+.icon-zakrety:before{content:'\004a';}
+.icon-skrzyzowanie:before{content:'\004b';}

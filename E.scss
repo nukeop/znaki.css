@@ -83,6 +83,10 @@
   &:only-child {
     margin-right: 0;
   }
+
+  [class*='icon-'] {
+    margin-right: 0.5em;
+  }
 }
 
 .drogowskaz {
