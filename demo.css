@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.demo {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  background: #ADD8E6; }
+  .demo .demo-row {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    padding: 1rem;
+    align-items: flex-start; }
+
+/*# sourceMappingURL=demo.css.map */
